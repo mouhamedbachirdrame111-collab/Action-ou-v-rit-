@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action ou Vérité</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#17122e,#29145c,#111827);
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  width: 92%;
+  max-width: 600px;
+  margin: auto;
+  padding: 25px 0 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 22px;
+  padding: 20px;
+  margin-bottom: 18px;
+  backdrop-filter: blur(10px);
+}
+
+label {
+  display: block;
+  margin: 12px 0 7px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg,#7c3aed,#ec4899);
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+.secondary {
+  background: #374151;
+}
+
+.action {
+  background: linear-gradient(135deg,#f97316,#ef4444);
+}
+
+.verite {
+  background: linear-gradient(135deg,#2563eb,#06b6d4);
+}
+
+.hidden {
+  display: none;
+}
+
+.players {
+  display: grid;
+  gap: 10px;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,.08);
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.score {
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.challenge {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.challenge-type {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.challenge-text {
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.current-player {
+  text-align: center;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: rgba(255,255,255,.15);
+}
+
+.rank {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 7px 0;
+  background: rgba(255,255,255,.08);
+  border-radius: 12px;
+}
+
+.small {
+  font-size: 13px;
+  color: #cbd5e1;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 Action ou Vérité</h1>
+<div class="subtitle">
